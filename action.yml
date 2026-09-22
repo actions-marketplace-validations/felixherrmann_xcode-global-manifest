@@ -1,0 +1,20 @@
+name: Xcode Global Manifest
+description: Dependabot updates for Xcode Swift package dependencies, enabled by a synchronized global manifest
+inputs:
+  resolved-file:
+    description: Path to Package.resolved in a standalone or project workspace, relative to the repository root
+    required: true
+  manifests:
+    description: Newline-separated Package.swift paths to sync
+    required: true
+  projects:
+    description: Newline-separated project.pbxproj paths to sync
+    required: false
+outputs:
+  changed:
+    description: Whether the action committed a change
+  commit-sha:
+    description: SHA of the sync commit, when changed is true
+runs:
+  using: node24
+  main: dist/index.js

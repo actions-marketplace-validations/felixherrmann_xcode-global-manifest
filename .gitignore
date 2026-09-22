@@ -1,0 +1,9 @@
+.DS_Store
+
+.build/
+node_modules/
+
+# Editors may resolve Package.swift fixtures automatically.
+test/fixtures/**/Package.resolved
+!test/fixtures/action/Package.resolved
+!test/fixtures/scenarios/standalone-workspace/**/Package.resolved

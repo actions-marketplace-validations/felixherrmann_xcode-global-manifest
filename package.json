@@ -1,0 +1,12 @@
+{
+  "name": "xcode-global-manifest",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p test/tsconfig.json && node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.5",
+    "typescript": "7.0.2"
+  }
+}
