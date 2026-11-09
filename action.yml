@@ -1,5 +1,8 @@
 name: Xcode Global Manifest
 description: Dependabot updates for Xcode Swift package dependencies, enabled by a synchronized global manifest
+branding:
+  icon: refresh-cw
+  color: blue
 inputs:
   resolved-file:
     description: Path to Package.resolved in a standalone or project workspace, relative to the repository root
