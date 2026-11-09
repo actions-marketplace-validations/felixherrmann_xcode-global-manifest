@@ -32,10 +32,8 @@ permissions:
 
 jobs:
   sync:
-    # The action writes back to the pull request branch, so fork pull requests
-    # are intentionally excluded.
     if: github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
